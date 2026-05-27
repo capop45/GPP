@@ -295,7 +295,7 @@
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
-            'X-Master-Key': API_KEY
+            'X-Access-Key': API_KEY
           },
           body: JSON.stringify(dataToSave)
         });
@@ -319,7 +319,7 @@
         const response = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
           method: 'GET',
           headers: {
-            'X-Master-Key': API_KEY
+            'X-Access-Key': API_KEY
           }
         });
 
